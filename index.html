@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Sabores do Interior | Cardápio Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- OTIMIZAÇÃO DE IMAGENS: Preload Hero Image (Prioridade Máxima) -->
+    <link rel="preload" as="image" href="https://static.wixstatic.com/media/1f17f3_c92de6441e58429eadaf5623d7a1aac4~mv2.jpeg/v1/fit/w_1200,h_1200,q_70/file.webp">
+    
+    <!-- OTIMIZAÇÃO DE CONEXÃO -->
+    <link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://static.wixstatic.com">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coffee: {
+                800: '#4A2E1A', // Base Brown
+                900: '#2C1A0E', // Darker Depth
+                700: '#5A3C2E', // Secondary
+              },
+              gold: {
+                400: '#D4B877',
+                500: '#BFA15F', // Metallic Matte Gold (More sophisticated than #C8A46A)
+                600: '#997B3F',
+              },
+              sepia: {
+                100: '#FDFBF7', // Rich Off-white / Paper Texture
+                200: '#E8E4D9', // Subtle Divider
+                300: '#D8C29A',
+              },
+              offwhite: '#FDFBF7'
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              cormorant: ['"Cormorant Garamond"', 'serif'],
+              montserrat: ['"Montserrat"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')"
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D4B877;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #997B3F;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-sepia-100 text-coffee-800 antialiased selection:bg-gold-500 selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
